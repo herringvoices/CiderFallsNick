@@ -1,0 +1,68 @@
+header{
+    width: 100%;
+
+}
+
+.header-grouping{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.header-grouping h1{
+    font-size: 3em;
+}
+.row{
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service {
+    list-style-type: none;  
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;  
+    padding: 0;  
+    margin: 0;  
+}
+
+.logo{
+    width: 5em;
+}
+
+.destination-container{
+    display: flex;
+    width:70%;
+    flex-wrap: wrap;
+}
+
+.destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 31%;
+
+}
+
+.destination li{
+    list-style-type: none;
+}
+
+.destination h2{
+    cursor: pointer;
+}
+
+.services-container{
+    width: 70%;
+    align-self: center;
+}
+
+.service li{
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+Table destinations {
+id int [pk, increment]
+title varchar
+location varchar
+}
+
+Table services {
+  id int [pk, increment]
+  type varchar
+}
+
+
+Table destinationServices {
+    id int [pk, increment]
+    destinationId int [ref: > destinations.id]
+    servicesId int [ref: > services.id]
+
+}
+
+Table parkInfo {
+    id int [pk, increment]
+    name varchar
+    logo varchar
+    email varchar
+    address varchar
+}
+
+Table guests {
+  id int [pk, increment]
+  firstName varchar
+  lastName varchar
+  destinationId int [ref: > destinations.id]
+
+}
